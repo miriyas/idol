@@ -1,0 +1,51 @@
+.years {
+  label {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.year {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.idol {
+  margin: 14px;
+  min-width: 100px;
+  font-size: 12px;
+  background-color: rgba(#D8D8D8, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(#444444, 0.2);
+  }
+
+  .picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    padding: 4px;
+  }
+}
+
+// .mixed-group {
+//   background: lightyellow;
+// }
+// .girl-group {
+//   background: pink;
+// }
+// .boy-group {
+//   background: skyblue;
+// }
+// .girl-solo {
+//   background: pink;
+// }
+// .boy-solo {
+//   background: skyblue;
+// }
