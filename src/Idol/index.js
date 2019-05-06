@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { groupBy } from 'lodash';
 import Idol from './Idol';
@@ -24,12 +24,12 @@ class IdolYears extends Component {
       <div className={styles.years}>
         {Object.keys(years).map(year => {
           return (
-            <>
+            <Fragment key={`year-wrapper-${year}`}>
               <label>{year}</label>
-              <ul key={year} className={styles.year}>
+              <ul key={`year-list-${year}`} className={styles.year}>
                 {years[year].map(idol => <Idol key={idol.name} data={idol} />)}
               </ul>
-            </>
+            </Fragment>
           )
         })}
       </div>
