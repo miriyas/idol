@@ -10,6 +10,10 @@ const IdolConstants = [
     debutYear: 1996,
     name: "UP",
     category: "mixed-group",
+    youtube: {
+      url: '-7QspykoYBc',
+      start: 171
+    }
   },
   {
     debutYear: 1996,
@@ -20,6 +24,10 @@ const IdolConstants = [
     debutYear: 1996,
     name: "자자",
     category: "mixed-group",
+    youtube: {
+      url: 'R3DbYFoqGr8',
+      start: 41
+    }
   },
   {
     debutYear: 1996,
@@ -38,12 +46,20 @@ const IdolConstants = [
     major: true,
     name: "H.O.T",
     category: "boy-group",
+    youtube: {
+      url: 'ly7qcY46ofw',
+      start: 92
+    }
   },
   {
     debutYear: 1996,
     major: true,
     name: "언타이틀",
     category: "boy-group",
+    youtube: {
+      url: 'thR2FBvc0EU',
+      start: 149
+    }
   },
   {
     debutYear: 1996,
@@ -65,11 +81,19 @@ const IdolConstants = [
     debutYear: 1996,
     name: "소찬휘",
     category: "girl-solo",
+    youtube: {
+      url: 'o1RFSX5Epmo',
+      start: 110
+    }
   },
   {
     debutYear: 1996,
     name: "양파",
     category: "girl-solo",
+    youtube: {
+      url: 'euodkPs-JMA',
+      start: 63
+    }
   },
   {
     debutYear: 1996,
@@ -87,12 +111,20 @@ const IdolConstants = [
     major: true,
     name: "김연우",
     category: "boy-solo",
+    youtube: {
+      url: 'wxxb311BWRM',
+      start: 128
+    }
   },
   {
     debutYear: 1996,
     major: true,
     name: "이현도",
     category: "boy-solo",
+    youtube: {
+      url: 'EuEDha_el4A',
+      start: 298
+    }
   },
   {
     debutYear: 1996,
@@ -106,11 +138,19 @@ const IdolConstants = [
     major: true,
     name: "스페이스A",
     category: "mixed-group",
+    youtube: {
+      url: 'ps-2nZtdAZQ',
+      start: 155
+    }
   },
   {
     debutYear: 1997,
     name: "자우림",
     category: "mixed-group",
+    youtube: {
+      url: '0UpMpuf3o8E',
+      start: 1
+    }
   },
   {
     debutYear: 1997,
@@ -143,12 +183,20 @@ const IdolConstants = [
     major: true,
     name: "베이비복스",
     category: "girl-group",
+    youtube: {
+      url: 'vEQpNDN0vmk',
+      start: 4
+    }
   },
   {
     debutYear: 1997,
     major: true,
     name: "디바",
     category: "girl-group",
+    youtube: {
+      url: 'PSM_VxctljQ',
+      start: 24
+    }
   },
 
   {
@@ -156,23 +204,39 @@ const IdolConstants = [
     major: true,
     name: "젝스키스",
     category: "boy-group",
+    youtube: {
+      url: '-MM1dcwAWIY',
+      start: 83
+    }
   },
   {
     debutYear: 1997,
     major: true,
     name: "NRG",
     category: "boy-group",
+    youtube: {
+      url: 'Qk7975XcK-g',
+      start: 62
+    }
   },
   {
     debutYear: 1997,
     major: true,
     name: "태사자",
     category: "boy-group",
+    youtube: {
+      url: 'NWROMz8DZv0',
+      start: 163
+    }
   },
   {
     debutYear: 1997,
     name: "지누션",
     category: "boy-group",
+    youtube: {
+      url: 'kuVtFzeEjF8',
+      start: 13
+    }
   },
   {
     debutYear: 1997,
@@ -190,6 +254,10 @@ const IdolConstants = [
     major: true,
     name: "박지윤",
     category: "girl-solo",
+    youtube: {
+      url: 'rAsMh0zyH3o',
+      start: 156
+    }
   },
 
   {
@@ -197,6 +265,10 @@ const IdolConstants = [
     major: true,
     name: "홍경민",
     category: "boy-solo",
+    youtube: {
+      url: 'v2j9WCHVG8A',
+      start: 91
+    }
   },
   {
     debutYear: 1997,
@@ -217,6 +289,10 @@ const IdolConstants = [
     debutYear: 1997,
     name: "얀",
     category: "boy-solo",
+    youtube: {
+      url: '_k-A0RULIPI',
+      start: 89
+    }
   },
 
   // 1998 === === === === ===
@@ -225,12 +301,20 @@ const IdolConstants = [
     major: true,
     name: "S#ARP",
     category: "mixed-group",
+    youtube: {
+      url: 'BH_NndGHsXI',
+      start: 74
+    }
   },
   {
     debutYear: 1998,
     major: true,
-    name: "코요테",
+    name: "코요태",
     category: "mixed-group",
+    youtube: {
+      url: 'I60XdW1QTeQ',
+      start: 118
+    }
   },
   {
     debutYear: 1998,
@@ -248,12 +332,20 @@ const IdolConstants = [
     major: true,
     name: "핑클",
     category: "girl-group",
+    youtube: {
+      url: 'SyTtCQnESZo',
+      start: 99
+    }
   },
   {
     debutYear: 1998,
     major: true,
     name: "한스밴드",
     category: "girl-group",
+    youtube: {
+      url: '4Mrf75nDAwU',
+      start: 12
+    }
   },
   {
     debutYear: 1998,
@@ -266,18 +358,30 @@ const IdolConstants = [
     major: true,
     name: "신화",
     category: "boy-group",
+    youtube: {
+      url: 'YxlXwKY825I',
+      start: 64
+    }
   },
   {
     debutYear: 1998,
     major: true,
     name: "1TYM",
     category: "boy-group",
+    youtube: {
+      url: 'gh2B1RtJbXg',
+      start: 147
+    }
   },
   {
     debutYear: 1998,
     major: true,
     name: "EVE",
     category: "boy-group",
+    youtube: {
+      url: '5j8JqkOZc2k',
+      start: 73
+    }
   },
   {
     debutYear: 1998,
@@ -310,12 +414,20 @@ const IdolConstants = [
     major: true,
     name: "김현정",
     category: "girl-solo",
+    youtube: {
+      url: 'N7VBSaZ-jKQ',
+      start: 87
+    }
   },
   {
     debutYear: 1998,
     major: true,
     name: "J.ae",
     category: "girl-solo",
+    youtube: {
+      url: '2W0QV_G-7_w',
+      start: 92
+    }
   },
   {
     debutYear: 1998,
@@ -343,6 +455,10 @@ const IdolConstants = [
     major: true,
     name: "조성모",
     category: "boy-solo",
+    youtube: {
+      url: 'cYSKoLOFGvQ',
+      start: 80
+    }
   },
   {
     debutYear: 1998,
@@ -392,24 +508,40 @@ const IdolConstants = [
     major: true,
     name: "god",
     category: "boy-group",
+    youtube: {
+      url: '72BqCAmhnxk',
+      start: 67
+    }
   },
   {
     debutYear: 1999,
     major: true,
     name: "플라이 투더 스카이",
     category: "boy-group",
+    youtube: {
+      url: 'tWTq_PMXfBE',
+      start: 176
+    }
   },
   {
     debutYear: 1999,
     major: true,
     name: "클릭비",
     category: "boy-group",
+    youtube: {
+      url: 'mVuZhU5z2AY',
+      start: 77
+    }
   },
   {
     debutYear: 1999,
     major: true,
     name: "Y2K",
     category: "boy-group",
+    youtube: {
+      url: 'H5SJfNCf5Ig',
+      start: 63
+    }
   },
   {
     debutYear: 1999,
@@ -437,18 +569,30 @@ const IdolConstants = [
     major: true,
     name: "이정현",
     category: "girl-solo",
+    youtube: {
+      url: 'fNqR8BVfwhU',
+      start: 162
+    }
   },
   {
     debutYear: 1999,
     major: true,
     name: "백지영",
     category: "girl-solo",
+    youtube: {
+      url: 'byEZDtOKqoA',
+      start: 30
+    }
   },
   {
     debutYear: 1999,
     major: true,
     name: "이수영",
     category: "girl-solo",
+    youtube: {
+      url: '0fBudhvR1ho',
+      start: 184
+    }
   },
   {
     debutYear: 1999,
@@ -476,12 +620,20 @@ const IdolConstants = [
     major: true,
     name: "김범수",
     category: "boy-solo",
+    youtube: {
+      url: 'cazcM_kEDSA',
+      start: 89
+    }
   },
   {
     debutYear: 1999,
     major: true,
     name: "박효신",
     category: "boy-solo",
+    youtube: {
+      url: 'sr3JaQ3h7YA',
+      start: 90
+    }
   },
   {
     debutYear: 1999,
@@ -495,6 +647,10 @@ const IdolConstants = [
     major: true,
     name: "체리필터",
     category: "mixed-group",
+    youtube: {
+      url: 'XIgxZCPzt5w',
+      start: 60
+    }
   },
 
   {
@@ -502,6 +658,10 @@ const IdolConstants = [
     major: true,
     name: "샤크라",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2000,
@@ -514,6 +674,10 @@ const IdolConstants = [
     major: true,
     name: "문차일드",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2000,
@@ -531,6 +695,10 @@ const IdolConstants = [
     major: true,
     name: "보아",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2000,
@@ -560,12 +728,20 @@ const IdolConstants = [
     major: true,
     name: "더 자두",
     category: "mixed-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
     major: true,
     name: "거북이",
     category: "mixed-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   {
@@ -573,6 +749,10 @@ const IdolConstants = [
     major: true,
     name: "쥬얼리",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
@@ -615,12 +795,20 @@ const IdolConstants = [
     major: true,
     name: "에픽하이",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
     major: true,
     name: "브라운 아이즈",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
@@ -648,6 +836,10 @@ const IdolConstants = [
     major: true,
     name: "장나라",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
@@ -690,18 +882,30 @@ const IdolConstants = [
     major: true,
     name: "성시경",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
     major: true,
     name: "싸이",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
     major: true,
     name: "리치",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2001,
@@ -818,12 +1022,20 @@ const IdolConstants = [
     major: true,
     name: "비",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2002,
     major: true,
     name: "휘성",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   // 2003 === === === === ===
@@ -838,12 +1050,20 @@ const IdolConstants = [
     major: true,
     name: "빅마마",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2003,
     major: true,
     name: "7공주",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2003,
@@ -856,6 +1076,10 @@ const IdolConstants = [
     major: true,
     name: "버즈",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2003,
@@ -893,18 +1117,30 @@ const IdolConstants = [
     major: true,
     name: "거미",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2003,
     major: true,
     name: "렉시",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2003,
     major: true,
     name: "이효리",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2003,
@@ -942,6 +1178,10 @@ const IdolConstants = [
     major: true,
     name: "SE7EN",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2003,
@@ -960,6 +1200,10 @@ const IdolConstants = [
     major: true,
     name: "클래지콰이",
     category: "mixed-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   {
@@ -973,12 +1217,20 @@ const IdolConstants = [
     major: true,
     name: "SG워너비",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2004,
     major: true,
     name: "동방신기",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2004,
@@ -996,6 +1248,10 @@ const IdolConstants = [
     major: true,
     name: "윤하",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2004,
@@ -1013,12 +1269,20 @@ const IdolConstants = [
     major: true,
     name: "이승기",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2004,
     major: true,
     name: "테이",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2004,
@@ -1038,6 +1302,10 @@ const IdolConstants = [
     major: true,
     name: "천상지희",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2005,
@@ -1085,12 +1353,20 @@ const IdolConstants = [
     major: true,
     name: "슈퍼주니어",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2005,
     major: true,
     name: "SS501",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2005,
@@ -1108,12 +1384,20 @@ const IdolConstants = [
     major: true,
     name: "아이비",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2005,
     major: true,
     name: "임정희",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2005,
@@ -1144,12 +1428,20 @@ const IdolConstants = [
     major: true,
     name: "브라운 아이드 걸스",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2006,
     major: true,
     name: "씨야",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2006,
@@ -1162,6 +1454,10 @@ const IdolConstants = [
     major: true,
     name: "빅뱅",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2006,
@@ -1192,18 +1488,30 @@ const IdolConstants = [
     major: true,
     name: "원더걸스",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2007,
     major: true,
     name: "카라",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2007,
     major: true,
     name: "소녀시대",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2007,
@@ -1236,6 +1544,10 @@ const IdolConstants = [
     major: true,
     name: "FT아일랜드",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2007,
@@ -1258,6 +1570,10 @@ const IdolConstants = [
     major: true,
     name: "손담비",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2007,
@@ -1292,6 +1608,10 @@ const IdolConstants = [
     major: true,
     name: "다비치",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   {
@@ -1299,18 +1619,30 @@ const IdolConstants = [
     major: true,
     name: "샤이니",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2008,
     major: true,
     name: "2AM",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2008,
     major: true,
     name: "2PM",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2008,
@@ -1333,6 +1665,10 @@ const IdolConstants = [
     major: true,
     name: "아이유",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2008,
@@ -1351,36 +1687,60 @@ const IdolConstants = [
     major: true,
     name: "2NE1",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
     major: true,
     name: "포미닛",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
     major: true,
     name: "애프터스쿨",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
     major: true,
     name: "티아라",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
     major: true,
     name: "f(x)",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
     major: true,
     name: "시크릿",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
@@ -1408,12 +1768,20 @@ const IdolConstants = [
     major: true,
     name: "비스트",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
     major: true,
     name: "엠블랙",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
@@ -1426,6 +1794,10 @@ const IdolConstants = [
     major: true,
     name: "박봄",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
@@ -1448,6 +1820,10 @@ const IdolConstants = [
     major: true,
     name: "서인국",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2009,
@@ -1476,18 +1852,30 @@ const IdolConstants = [
     major: true,
     name: "miss A",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2010,
     major: true,
     name: "걸스데이",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2010,
     major: true,
     name: "씨스타",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2010,
@@ -1520,18 +1908,30 @@ const IdolConstants = [
     major: true,
     name: "씨엔블루",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2010,
     major: true,
     name: "인피니트",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2010,
     major: true,
     name: "틴탑",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2010,
@@ -1564,12 +1964,20 @@ const IdolConstants = [
     major: true,
     name: "현아",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2010,
     major: true,
     name: "G.NA",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   // 2011 === === === === ===
@@ -1578,6 +1986,10 @@ const IdolConstants = [
     major: true,
     name: "Apink",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2011,
@@ -1630,12 +2042,20 @@ const IdolConstants = [
     major: true,
     name: "B1A4",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2011,
     major: true,
     name: "블락비",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2011,
@@ -1664,6 +2084,10 @@ const IdolConstants = [
     major: true,
     name: "허각",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2011,
@@ -1677,12 +2101,20 @@ const IdolConstants = [
     major: true,
     name: "EXID",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "AOA",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
@@ -1735,36 +2167,60 @@ const IdolConstants = [
     major: true,
     name: "B.A.P",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "BTOB",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "EXO",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "울랄라세션",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "빅스",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "뉴이스트",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
@@ -1802,18 +2258,30 @@ const IdolConstants = [
     major: true,
     name: "에일리",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "이하이",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
     major: true,
     name: "백아연",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2012,
@@ -1859,6 +2327,10 @@ const IdolConstants = [
     major: true,
     name: "방탄소년단",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2013,
@@ -1886,6 +2358,10 @@ const IdolConstants = [
     major: true,
     name: "선미",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2013,
@@ -1918,18 +2394,30 @@ const IdolConstants = [
     major: true,
     name: "로이킴",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2013,
     major: true,
     name: "정준영",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2013,
     major: true,
     name: "에릭남",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2013,
@@ -1943,12 +2431,20 @@ const IdolConstants = [
     major: true,
     name: "악동뮤지션",
     category: "mixed-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
     major: true,
     name: "신현희와 김루트",
     category: "mixed-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   {
@@ -1956,18 +2452,30 @@ const IdolConstants = [
     major: true,
     name: "마마무",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
     major: true,
     name: "레드벨벳",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
     major: true,
     name: "러블리즈",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
@@ -2005,12 +2513,20 @@ const IdolConstants = [
     major: true,
     name: "GOT7",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
     major: true,
     name: "WINNER",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
@@ -2053,24 +2569,40 @@ const IdolConstants = [
     major: true,
     name: "박보람",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
     major: true,
     name: "권진아",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
     major: true,
     name: "헤이즈",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
     major: true,
     name: "레이나",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2014,
@@ -2083,6 +2615,10 @@ const IdolConstants = [
     major: true,
     name: "에디킴",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   // 2015 === === === === ===
@@ -2091,18 +2627,30 @@ const IdolConstants = [
     major: true,
     name: "여자친구",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
     major: true,
     name: "오마이걸",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
     major: true,
     name: "TWICE",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
@@ -2140,24 +2688,40 @@ const IdolConstants = [
     major: true,
     name: "iKON",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
     major: true,
     name: "세븐틴",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
     major: true,
     name: "몬스타엑스",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
     major: true,
     name: "멜로망스",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
@@ -2190,12 +2754,20 @@ const IdolConstants = [
     major: true,
     name: "태연",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
     major: true,
     name: "백예린",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2015,
@@ -2209,24 +2781,40 @@ const IdolConstants = [
     major: true,
     name: "볼빨간사춘기",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
     major: true,
     name: "I.O.I",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
     major: true,
     name: "BLACKPINK",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
     major: true,
     name: "모모랜드",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
@@ -2264,12 +2852,20 @@ const IdolConstants = [
     major: true,
     name: "NCT",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
     major: true,
     name: "펜타곤",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
@@ -2307,6 +2903,10 @@ const IdolConstants = [
     major: true,
     name: "정은지",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
 
   {
@@ -2314,12 +2914,20 @@ const IdolConstants = [
     major: true,
     name: "정승환",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
     major: true,
     name: "MC그리",
     category: "boy-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2016,
@@ -2385,6 +2993,10 @@ const IdolConstants = [
     major: true,
     name: "Wanna One",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2017,
@@ -2447,12 +3059,20 @@ const IdolConstants = [
     major: true,
     name: "청하",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2017,
     major: true,
     name: "전소연",
     category: "girl-solo",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2017,
@@ -2482,12 +3102,20 @@ const IdolConstants = [
     major: true,
     name: "아이들",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2018,
     major: true,
     name: "IZ*ONE",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2018,
@@ -2525,6 +3153,10 @@ const IdolConstants = [
     major: true,
     name: "Stray Kids",
     category: "boy-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2018,
@@ -2575,6 +3207,10 @@ const IdolConstants = [
     major: true,
     name: "ITZY",
     category: "girl-group",
+    youtube: {
+      url: '',
+      start: 0
+    }
   },
   {
     debutYear: 2019,
