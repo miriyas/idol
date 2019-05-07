@@ -6,9 +6,12 @@ import cx from 'classnames';
 
 import styles from './styles.module.scss';
 
+
 @autobind
 class Idol extends Component {
   static propTypes = {
+    selected: PropTypes.string,
+    setSelected: PropTypes.func.isRequired,
     data: PropTypes.shape({
       debutYear: PropTypes.number.isRequired,
       major: PropTypes.bool,
@@ -18,43 +21,38 @@ class Idol extends Component {
         url: PropTypes.string,
         start: PropTypes.number
       }),
+      desc: PropTypes.string
     })
   };
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      selected: null
-    };
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(nextProps) {
     return (
       this.props.data !== nextProps.data
-      || this.state.selected !== nextState.selected
+      || this.props.selected !== nextProps.selected
     );
   }
 
   render() {
-    console.log('render');
-    const { major, name, category, youtube } = this.props.data;
-    const selected = this.state.selected === name;
+    const { data, selected } = this.props;
+    const { major, name, category, youtube, desc, debutYear } = data;
+    const isSelected = selected === name;
     let youtubeCode;
-    if (selected && youtube) {
+    if (isSelected && youtube) {
       const youtubeUrl = `https://www.youtube.com/embed/${youtube.url}?controls=0&amp;start=${youtube.start};autoplay=1`
       youtubeCode = <iframe width="0" height="0" src={youtubeUrl} frameBorder="0" allow="accelerometer; autoplay;" allowFullScreen />
     }
 
     return (
       <div
-        className={cx(styles.idol, styles[category], { [styles.major]: major, [styles.selected]: selected })}
-        onMouseEnter={memobind(this, 'handleOnMouseEnter', name)}
-        onMouseLeave={this.handleOnMouseLeave}
-        onClick={memobind(this, 'handleOnClick', youtube)}
-        data-dd={`url(./images/idols/${name.replace('#', '').replace(' ', '')}.jpg)`}
+        className={cx(`grid-item-${debutYear}`, styles.idol, styles[category], { [styles.major]: major, [styles.selected]: isSelected })}
+        onClick={memobind(this, 'handleOnClick', name, debutYear)}
+        data-major={major === true ? 'major' : 'minor'}
       >
         <div className={styles.top}>
           <div className={styles.picture} style={{ backgroundImage: `url(./images/idols/${name.replace('#', '').replace(/\s/g, '')}.jpg)` }} />
+          <div className={styles.desc}>
+            {desc && `"${desc}"`}
+          </div>
         </div>
         <p className={styles.name}>{name}</p>
         {youtubeCode}
@@ -62,29 +60,19 @@ class Idol extends Component {
     );
   }
 
-  handleOnClick(youtube) {
-    if (youtube) {
-      window.open(`https://www.youtube.com/watch?v=${youtube.url}`, '_blank');
-    }
-  }
+  // handleOnClick(youtube) {
+  //   if (youtube) {
+  //     window.open(`https://www.youtube.com/watch?v=${youtube.url}`, '_blank');
+  //   }
+  // }
 
-  handleOnMouseEnter(name) {
-    console.log('handleOnMouseEnter');
-    if (!this.state.selected) {
-      console.log(name);
-      this.setState({
-        selected: name
-      });
-    }
-  }
-
-  handleOnMouseLeave() {
-    console.log('handleOnMouseLeave');
-    if (this.state.selected) {
+  handleOnClick(name, debutYear) {
+    if (this.props.selected === name) {
       console.log('go null');
-      this.setState({
-        selected: null
-      });
+      this.props.setSelected(null, debutYear);
+    } else {
+      console.log(name);
+      this.props.setSelected(name, debutYear);
     }
   }
 }

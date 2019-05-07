@@ -5,6 +5,7 @@ const IdolConstants = [
     major: true,
     name: "영턱스클럽",
     category: "mixed-group",
+    desc: '1세대 아이돌 전성시대의 포문을 연 아이돌 그룹 중 하나'
   },
   {
     debutYear: 1996,

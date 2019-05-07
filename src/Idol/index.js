@@ -1,37 +1,63 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { groupBy } from 'lodash';
-import Idol from './Idol';
+import autobind from 'autobind-decorator';
+import IdolYear from './IdolYear';
+import IdolConstants from '../shared/IdolConstants';
 
 import styles from './styles.module.scss';
 
-function IdolYears({ data }) {
-  const years = groupBy(data, 'debutYear');
-  return (
-    <div className={styles.years}>
-      {Object.keys(years).map(year => {
-        return (
-          <Fragment key={`year-wrapper-${year}`}>
-            <label>{year}년</label>
-            <ul key={`year-list-${year}`} className={styles.year}>
-              {years[year].map(idol => <Idol key={idol.name} data={idol} />)}
-            </ul>
-          </Fragment>
-        )
-      })}
-    </div>
-  );
-};
+function layout(year) {
+  window.tm = setTimeout(() => {
+    window.iso[year].layout();
+  }, 500);
+}
 
-IdolYears.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      debutYear: PropTypes.number.isRequired,
-      major: PropTypes.bool,
-      name: PropTypes.string.isRequired,
-      category: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+@autobind
+class IdolYears extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: null
+    };
+    window.iso = {};
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    return (
+      this.state.selected !== nextState.selected
+    );
+  }
+
+  componentWillUnmount() {
+    window.tm = null;
+  }
+
+  render() {
+    const { selected } = this.state;
+    const years = groupBy(IdolConstants, 'debutYear');
+    return (
+      <div className={styles.years}>
+        {Object.keys(years).map(year => {
+          return (
+            <IdolYear
+              key={`year-wrapper-${year}`}
+              year={year}
+              data={years[year]}
+              setSelected={this.setSelected}
+              selected={selected}
+            />
+          )
+        })}
+      </div>
+    );
+  }
+
+  setSelected(name, year) {
+    this.setState({
+      selected: name
+    });
+    layout(year);
+  }
 };
 
 export default IdolYears;
