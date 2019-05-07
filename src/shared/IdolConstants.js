@@ -50,7 +50,8 @@ const IdolConstants = [
     youtube: {
       url: 'ly7qcY46ofw',
       start: 92
-    }
+    },
+    desc: '서태지 이후 본격적인 아이돌 전성시대의 왕조를 세웠다'
   },
   {
     debutYear: 1996,

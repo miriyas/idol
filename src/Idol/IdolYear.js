@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import autobind from 'autobind-decorator';
 import cx from 'classnames';
+import YearConstants from '../shared/YearConstants';
 import Idol from './Idol';
 
 import styles from './styles.module.scss';
@@ -59,6 +60,7 @@ class IdolYear extends Component {
     return (
       <Fragment >
         <label>{year}년</label>
+        {YearConstants[year] && <p className={styles.yearDesc}>{YearConstants[year].desc}</p>}
         <ul key={`year-list-${year}`} className={cx(`grid-${year}`, styles.year)}>
           {data.map(idol => <Idol key={idol.name} data={idol} selected={selected} setSelected={this.props.setSelected} />)}
         </ul>
