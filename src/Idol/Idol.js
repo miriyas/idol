@@ -38,24 +38,26 @@ class Idol extends Component {
     const isSelected = selected === name;
     let youtubeCode;
     if (isSelected && youtube) {
-      const youtubeUrl = `https://www.youtube.com/embed/${youtube.url}?controls=0&amp;start=${youtube.start};autoplay=1`
-      youtubeCode = <iframe width="0" height="0" src={youtubeUrl} frameBorder="0" allow="accelerometer; autoplay;" allowFullScreen />
+      const youtubeUrl = `https://www.youtube.com/embed/${youtube.url}?controls=0&amp;start=${youtube.start};autoplay=1;modestbranding=1`
+      youtubeCode = <iframe width="228" height="152" src={youtubeUrl} frameBorder="0" allow="accelerometer; autoplay;" allowFullScreen />
     }
 
     return (
       <div
         className={cx(`grid-item-${debutYear}`, styles.idol, styles[category], { [styles.major]: major, [styles.selected]: isSelected })}
-        onClick={memobind(this, 'handleOnClick', name, debutYear)}
+        onClick={memobind(this, 'handleOnClick', data)}
         data-major={major === true ? 'major' : 'minor'}
       >
-        <div className={styles.top}>
-          <div className={styles.picture} style={{ backgroundImage: `url(./images/idols/${name.replace('#', '').replace(/\s/g, '')}.jpg)` }} />
-          <div className={styles.desc}>
-            {desc && `"${desc}"`}
+        <div className={styles.twrapper}>
+          <div className={styles.top}>
+            <div className={styles.picture} style={youtube && { backgroundImage: `url(./images/idols/${name.replace('#', '').replace(/\s/g, '')}.jpg)` }} />
+            <div className={styles.desc}>
+              {desc && `"${desc}"`}
+            </div>
           </div>
+          <p className={styles.name}>{name}</p>
+          {youtubeCode}
         </div>
-        <p className={styles.name}>{name}</p>
-        {youtubeCode}
       </div>
     );
   }
@@ -66,13 +68,17 @@ class Idol extends Component {
   //   }
   // }
 
-  handleOnClick(name, debutYear) {
+  handleOnClick(data) {
+    const { name, debutYear, youtube } = data;
     if (this.props.selected === name) {
-      console.log('go null');
+      console.log('cancel');
       this.props.setSelected(null, debutYear);
-    } else {
+    } else if (youtube) {
       console.log(name);
       this.props.setSelected(name, debutYear);
+    } else {
+      console.log('go null');
+      this.props.setSelected(null, debutYear);
     }
   }
 }

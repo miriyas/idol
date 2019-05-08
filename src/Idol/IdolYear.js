@@ -34,7 +34,7 @@ class IdolYear extends Component {
     window.iso[year] = new Isotope( elem, {
       itemSelector: `.grid-item-${year}`,
       layoutMode: 'packery',
-      transitionDuration: 0,
+      transitionDuration: 300,
       packery: {
         gutter: 28,
         columnWidth: 100,

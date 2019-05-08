@@ -23,9 +23,15 @@
   cursor: pointer;
   width: 100px;
   font-size: 12px;
-  transition: 0.3s;
   box-shadow: 0 2px 4px 0 rgba(#444444, 0.2);
   overflow: hidden;
+  user-select: none;
+
+  .twrapper {
+    width: 100px;
+    transition: 0.3s;
+    background-color: #000000;
+  }
 
   &.major {
     .name {
@@ -35,13 +41,19 @@
 
   &.selected {
     width: 228px;
+    height: 276px;
+
+    .twrapper {
+      width: 228px;
+      height: 276px;
+    }
   }
 
   .top {
     height: 100px;
     position: relative;
     overflow: hidden;
-    background-color: rgba(#D8D8D8, 0.2);
+    background-color: #F7F7F7;
   }
 
   .picture {
@@ -50,6 +62,7 @@
     left: 0;
     width: 100px;
     height: 100px;
+    background-color: #F7F7F7;
     z-index: 20;
   }
 
@@ -65,11 +78,13 @@
   .name {
     padding: 4px;
     height: 24px;
+    line-height: 16px;
     clear: both;
+    background-color: #FFFFFF;
   }
 
   iframe {
-    position: absolute;
+    // position: absolute;
   }
 }
 
