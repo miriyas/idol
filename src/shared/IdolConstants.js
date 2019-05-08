@@ -2,48 +2,102 @@ const IdolConstants = [
   // 1996 === === === === ===
   {
     debutYear: 1996,
+    endYear: 2011,
     major: true,
     name: "영턱스클럽",
     category: "mixed-group",
-    desc: '1세대 아이돌 전성시대의 포문을 연 아이돌 그룹 중 하나'
+    youtube: {
+      url: 'qB2sh9dKLQw',
+      start: 86
+    },
+    desc: {
+      title: '서태지와 아이들 출신의 이주노가 프로듀싱한 혼성 댄스 그룹',
+      namu: 'https://namu.wiki/w/%EC%98%81%ED%84%B1%EC%8A%A4%ED%81%B4%EB%9F%BD',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=164',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100045'
+    }
   },
   {
     debutYear: 1996,
+    endYear: 1999,
     name: "UP",
     category: "mixed-group",
     youtube: {
       url: '-7QspykoYBc',
       start: 171
+    },
+    desc: {
+      title: '중학생 멤버들의 귀여운 용모를 전면에 내세운 4인조 댄스 그룹',
+      namu: 'https://namu.wiki/w/UP',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=336',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100019'
     }
   },
   {
     debutYear: 1996,
+    endYear: 1997,
     name: "콜라",
     category: "mixed-group",
+    youtube: {
+      url: 'AEtFtzs8FDE',
+      start: 115
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%BD%9C%EB%9D%BC(%EA%B0%80%EC%88%98)',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=1585',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=101793'
+    }
   },
   {
     debutYear: 1996,
+    endYear: 2010,
     name: "자자",
     category: "mixed-group",
     youtube: {
       url: 'R3DbYFoqGr8',
       start: 41
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9E%90%EC%9E%90(%ED%98%BC%EC%84%B1%EA%B7%B8%EB%A3%B9)',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=9579',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100101'
     }
   },
   {
     debutYear: 1996,
+    endYear: 2001,
     name: "주주클럽",
     category: "mixed-group",
+    youtube: {
+      url: 'CkM1TcQ1o64',
+      start: 46
+    },
+    desc: {
+      title: '톡톡 튀는 음악과 자유로운 무대매너로 신선한 충격을 전해줬던 대한민국의 3인조 모던 록 밴드',
+      namu: 'https://namu.wiki/w/%EC%A3%BC%EC%A3%BC%ED%81%B4%EB%9F%BD',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=253',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100053'
+    }
   },
 
   {
     debutYear: 1996,
+    endYear: 2006,
     name: "뚜띠",
     category: "girl-group",
+    youtube: {
+      url: 'diCkr2E3vVA',
+      start: 180
+    },
+    desc: {
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=10782',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100155'
+    }
   },
 
   {
     debutYear: 1996,
+    endYear: 2001,
     major: true,
     name: "H.O.T",
     category: "boy-group",
@@ -51,32 +105,68 @@ const IdolConstants = [
       url: 'ly7qcY46ofw',
       start: 92
     },
-    desc: '서태지 이후 본격적인 아이돌 전성시대의 왕조를 세웠다'
+    desc: {
+      title: '서태지 이후 본격적인 아이돌 전성시대의 왕조를 세움',
+      namu: 'https://namu.wiki/w/H.O.T.',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=314',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100008'
+    }
   },
   {
     debutYear: 1996,
+    endYear: 1999,
     major: true,
     name: "언타이틀",
     category: "boy-group",
     youtube: {
       url: 'thR2FBvc0EU',
       start: 149
+    },
+    desc: {
+      title: '유건형과 서정환으로 구성된 대한민국의 실력파 듀오',
+      namu: 'https://namu.wiki/w/%EC%96%B8%ED%83%80%EC%9D%B4%ED%8B%80',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=159',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100042'
     }
   },
   {
     debutYear: 1996,
+    endYear: 2010,
     name: "구피",
     category: "boy-group",
+    youtube: {
+      url: 'K5lViE7-4-c',
+      start: 142
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EA%B5%AC%ED%94%BC(%EC%9D%8C%EC%95%85%20%EA%B7%B8%EB%A3%B9)',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=10',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100023'
+    }
   },
   {
     debutYear: 1996,
+    endYear: 1997,
     name: "IDOL",
     category: "boy-group",
+    youtube: {
+      url: 'XrHIReVLZZs',
+      start: 146
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/IDOL',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=101640'
+    }
   },
   {
     debutYear: 1996,
+    endYear: 1997,
     name: "하모하모",
     category: "boy-group",
+    desc: {
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=9490',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=100178'
+    }
   },
 
   {
@@ -86,6 +176,11 @@ const IdolConstants = [
     youtube: {
       url: 'o1RFSX5Epmo',
       start: 110
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%86%8C%EC%B0%AC%ED%9C%98',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=127',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=3897'
     }
   },
   {
@@ -95,43 +190,67 @@ const IdolConstants = [
     youtube: {
       url: 'euodkPs-JMA',
       start: 63
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%96%91%ED%8C%8C(%EA%B0%80%EC%88%98)'
     }
   },
   {
     debutYear: 1996,
     name: "리아",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%A6%AC%EC%95%84(%EA%B0%80%EC%88%98)'
+    }
   },
   {
     debutYear: 1996,
     name: "에코",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%97%90%EC%BD%94(%EA%B1%B8%EA%B7%B8%EB%A3%B9)'
+    }
   },
 
   {
     debutYear: 1996,
+    endYear: '활동중',
     major: true,
     name: "김연우",
     category: "boy-solo",
     youtube: {
       url: 'wxxb311BWRM',
       start: 128
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EA%B9%80%EC%97%B0%EC%9A%B0',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=30',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=6017'
     }
   },
   {
     debutYear: 1996,
+    endYear: '활동중',
     major: true,
     name: "이현도",
     category: "boy-solo",
     youtube: {
       url: 'EuEDha_el4A',
       start: 298
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9D%B4%ED%98%84%EB%8F%84',
+      naver: 'https://music.naver.com/artist/intro.nhn?artistId=213',
+      melon: 'https://www.melon.com/artist/timeline.htm?artistId=3614'
     }
   },
   {
     debutYear: 1996,
     name: "이지훈",
     category: "boy-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9D%B4%EC%A7%80%ED%9B%88(%EB%A9%80%ED%8B%B0%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B4%EB%84%88)'
+    }
   },
 
   // 1997 === === === === ===
@@ -143,6 +262,9 @@ const IdolConstants = [
     youtube: {
       url: 'ps-2nZtdAZQ',
       start: 155
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%20%EC%97%90%EC%9D%B4'
     }
   },
   {
@@ -152,6 +274,9 @@ const IdolConstants = [
     youtube: {
       url: '0UpMpuf3o8E',
       start: 1
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9E%90%EC%9A%B0%EB%A6%BC'
     }
   },
   {
@@ -178,6 +303,9 @@ const IdolConstants = [
     youtube: {
       url: 'guTWZjpy5CI',
       start: 10
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/S.E.S.'
     }
   },
   {
@@ -188,6 +316,9 @@ const IdolConstants = [
     youtube: {
       url: 'vEQpNDN0vmk',
       start: 4
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B2%A0%EC%9D%B4%EB%B9%84%EB%B3%B5%EC%8A%A4'
     }
   },
   {
@@ -198,6 +329,9 @@ const IdolConstants = [
     youtube: {
       url: 'PSM_VxctljQ',
       start: 24
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/디바(가수)'
     }
   },
 
@@ -209,6 +343,9 @@ const IdolConstants = [
     youtube: {
       url: '-MM1dcwAWIY',
       start: 83
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%A0%9D%EC%8A%A4%ED%82%A4%EC%8A%A4'
     }
   },
   {
@@ -219,6 +356,9 @@ const IdolConstants = [
     youtube: {
       url: 'Qk7975XcK-g',
       start: 62
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/NRG(%EC%95%84%EC%9D%B4%EB%8F%8C)'
     }
   },
   {
@@ -229,6 +369,9 @@ const IdolConstants = [
     youtube: {
       url: 'NWROMz8DZv0',
       start: 163
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%83%9C%EC%82%AC%EC%9E%90(%EC%95%84%EC%9D%B4%EB%8F%8C)'
     }
   },
   {
@@ -238,6 +381,9 @@ const IdolConstants = [
     youtube: {
       url: 'kuVtFzeEjF8',
       start: 13
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%A7%80%EB%88%84%EC%85%98'
     }
   },
   {
@@ -259,6 +405,9 @@ const IdolConstants = [
     youtube: {
       url: 'rAsMh0zyH3o',
       start: 156
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B0%95%EC%A7%80%EC%9C%A4(%EB%A9%80%ED%8B%B0%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B4%EB%84%88)'
     }
   },
 
@@ -270,6 +419,9 @@ const IdolConstants = [
     youtube: {
       url: 'v2j9WCHVG8A',
       start: 91
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%99%8D%EA%B2%BD%EB%AF%BC'
     }
   },
   {
@@ -280,12 +432,18 @@ const IdolConstants = [
     youtube: {
       url: '0IA6HHiFjec',
       start: 102
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%8A%A4%ED%8B%B0%EB%B8%8C%20%EC%9C%A0'
     }
   },
   {
     debutYear: 1997,
     name: "박완규",
     category: "boy-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B0%95%EC%99%84%EA%B7%9C'
+    }
   },
   {
     debutYear: 1997,
@@ -294,6 +452,9 @@ const IdolConstants = [
     youtube: {
       url: '_k-A0RULIPI',
       start: 89
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%96%80(%EA%B0%80%EC%88%98)'
     }
   },
 
@@ -306,6 +467,9 @@ const IdolConstants = [
     youtube: {
       url: 'BH_NndGHsXI',
       start: 74
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/S%23ARP'
     }
   },
   {
@@ -316,12 +480,18 @@ const IdolConstants = [
     youtube: {
       url: 'I60XdW1QTeQ',
       start: 118
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%BD%94%EC%9A%94%ED%83%9C'
     }
   },
   {
     debutYear: 1998,
     name: "비쥬",
     category: "mixed-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B9%84%EC%A5%AC(%EA%B0%80%EC%88%98)'
+    }
   },
   {
     debutYear: 1998,
@@ -337,6 +507,9 @@ const IdolConstants = [
     youtube: {
       url: 'SyTtCQnESZo',
       start: 99
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%95%91%ED%81%B4'
     }
   },
   {
@@ -347,12 +520,18 @@ const IdolConstants = [
     youtube: {
       url: '4Mrf75nDAwU',
       start: 12
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%95%9C%EC%8A%A4%EB%B0%B4%EB%93%9C'
     }
   },
   {
     debutYear: 1998,
     name: "써클",
     category: "girl-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%8D%A8%ED%81%B4(%EC%95%84%EC%9D%B4%EB%8F%8C)'
+    }
   },
 
   {
@@ -363,6 +542,9 @@ const IdolConstants = [
     youtube: {
       url: 'YxlXwKY825I',
       start: 64
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%8B%A0%ED%99%94(%EC%95%84%EC%9D%B4%EB%8F%8C)'
     }
   },
   {
@@ -373,6 +555,9 @@ const IdolConstants = [
     youtube: {
       url: 'gh2B1RtJbXg',
       start: 147
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9B%90%ED%83%80%EC%9E%84(%EA%B7%B8%EB%A3%B9)'
     }
   },
   {
@@ -383,12 +568,18 @@ const IdolConstants = [
     youtube: {
       url: '5j8JqkOZc2k',
       start: 73
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9D%B4%EB%B8%8C(%EB%A1%9D%EB%B0%B4%EB%93%9C)'
     }
   },
   {
     debutYear: 1998,
     name: "팬클럽",
     category: "boy-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%8C%AC%ED%81%B4%EB%9F%BD#s-2'
+    }
   },
   {
     debutYear: 1998,
@@ -399,6 +590,9 @@ const IdolConstants = [
     debutYear: 1998,
     name: "OPPA",
     category: "boy-group",
+    desc: {
+      namu: 'https://namu.wiki/w/OPPA'
+    }
   },
   {
     debutYear: 1998,
@@ -409,6 +603,9 @@ const IdolConstants = [
     debutYear: 1998,
     name: "포맨",
     category: "boy-group",
+    desc: {
+      namu: 'https://namu.wiki/w/4MEN'
+    }
   },
 
   {
@@ -419,6 +616,9 @@ const IdolConstants = [
     youtube: {
       url: 'N7VBSaZ-jKQ',
       start: 87
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EA%B9%80%ED%98%84%EC%A0%95(1976)'
     }
   },
   {
@@ -429,22 +629,34 @@ const IdolConstants = [
     youtube: {
       url: '2W0QV_G-7_w',
       start: 92
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/J.ae'
     }
   },
   {
     debutYear: 1998,
     name: "박정현",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B0%95%EC%A0%95%ED%98%84'
+    }
   },
   {
     debutYear: 1998,
     name: "이소은",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9D%B4%EC%86%8C%EC%9D%80(%EA%B0%80%EC%88%98)'
+    }
   },
   {
     debutYear: 1998,
     name: "박기영",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B0%95%EA%B8%B0%EC%98%81'
+    }
   },
   {
     debutYear: 1998,
@@ -460,12 +672,18 @@ const IdolConstants = [
     youtube: {
       url: 'cYSKoLOFGvQ',
       start: 80
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%A1%B0%EC%84%B1%EB%AA%A8'
     }
   },
   {
     debutYear: 1998,
     name: "최창민",
     category: "boy-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%B5%9C%EC%A0%9C%EC%9A%B0(%EB%B0%B0%EC%9A%B0)'
+    }
   },
 
   // 1999 === === === === ===
@@ -473,36 +691,61 @@ const IdolConstants = [
     debutYear: 1999,
     name: "클레오",
     category: "girl-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%81%B4%EB%A0%88%EC%98%A4'
+    }
   },
   {
     debutYear: 1999,
     name: "티티마",
     category: "girl-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%8B%B0%ED%8B%B0%EB%A7%88(%EA%B1%B8%EA%B7%B8%EB%A3%B9)'
+    }
   },
   {
     debutYear: 1999,
     name: "O-24",
     category: "girl-group",
+    desc: {
+      namu: 'https://namu.wiki/w/O-24'
+    }
   },
   {
     debutYear: 1999,
     name: "애즈 원",
     category: "girl-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%95%A0%EC%A6%88%20%EC%9B%90'
+    }
   },
   {
     debutYear: 1999,
     name: "타샤니",
     category: "girl-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9C%A4%EB%AF%B8%EB%9E%98'
+    }
   },
   {
     debutYear: 1999,
-    name: "Ese U",
+    name: "See U",
     category: "girl-group",
+    desc: {
+      namu: 'https://namu.wiki/w/See%20U'
+    }
   },
   {
     debutYear: 1999,
     name: "두리안",
     category: "girl-group",
+    youtube: {
+      url: '8fTKs5DShYw',
+      start: 22
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%91%90%EB%A6%AC%EC%95%88#s-3'
+    }
   },
 
   {
@@ -559,11 +802,17 @@ const IdolConstants = [
     debutYear: 1999,
     name: "야다",
     category: "boy-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%95%BC%EB%8B%A4(%EB%B0%B4%EB%93%9C)'
+    }
   },
   {
     debutYear: 1999,
     name: "플라워",
     category: "boy-group",
+    desc: {
+      namu: 'https://namu.wiki/w/%ED%94%8C%EB%9D%BC%EC%9B%8C(%EB%B0%B4%EB%93%9C)'
+    }
   },
 
   {
@@ -574,6 +823,9 @@ const IdolConstants = [
     youtube: {
       url: 'fNqR8BVfwhU',
       start: 162
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9D%B4%EC%A0%95%ED%98%84(%EB%A9%80%ED%8B%B0%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B4%EB%84%88)'
     }
   },
   {
@@ -584,6 +836,9 @@ const IdolConstants = [
     youtube: {
       url: 'byEZDtOKqoA',
       start: 30
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B0%B1%EC%A7%80%EC%98%81'
     }
   },
   {
@@ -594,27 +849,42 @@ const IdolConstants = [
     youtube: {
       url: '0fBudhvR1ho',
       start: 184
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9D%B4%EC%88%98%EC%98%81(%EA%B0%80%EC%88%98)'
     }
   },
   {
     debutYear: 1999,
     name: "소냐",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%86%8C%EB%83%90(%EA%B0%80%EC%88%98)'
+    }
   },
   {
     debutYear: 1999,
     name: "샤니",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%83%A4%EB%8B%88'
+    }
   },
   {
     debutYear: 1999,
     name: "채정안",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%B1%84%EC%A0%95%EC%95%88'
+    }
   },
   {
     debutYear: 1999,
     name: "유채영",
     category: "girl-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/%EC%9C%A0%EC%B1%84%EC%98%81'
+    }
   },
 
   {
@@ -625,6 +895,9 @@ const IdolConstants = [
     youtube: {
       url: 'cazcM_kEDSA',
       start: 89
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EA%B9%80%EB%B2%94%EC%88%98'
     }
   },
   {
@@ -635,12 +908,18 @@ const IdolConstants = [
     youtube: {
       url: 'sr3JaQ3h7YA',
       start: 90
+    },
+    desc: {
+      namu: 'https://namu.wiki/w/%EB%B0%95%ED%9A%A8%EC%8B%A0'
     }
   },
   {
     debutYear: 1999,
     name: "강현수",
     category: "boy-solo",
+    desc: {
+      namu: 'https://namu.wiki/w/V.One'
+    }
   },
 
   // 2000 === === === === ===

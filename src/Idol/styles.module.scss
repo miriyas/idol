@@ -73,6 +73,14 @@
     z-index: 19;
     width: 130px;
     padding: 8px;
+
+    .title {
+      padding-bottom: 8px;
+    }
+
+    a {
+      padding: 0 2px;
+    }
   }
 
   .name {
@@ -81,6 +89,10 @@
     line-height: 16px;
     clear: both;
     background-color: #FFFFFF;
+
+    span {
+      color: #999999;
+    }
   }
 
   iframe {

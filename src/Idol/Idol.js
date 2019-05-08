@@ -34,7 +34,7 @@ class Idol extends Component {
 
   render() {
     const { data, selected } = this.props;
-    const { major, name, category, youtube, desc, debutYear } = data;
+    const { major, name, category, youtube, desc, debutYear, endYear } = data;
     const isSelected = selected === name;
 
     let youtubeCode;
@@ -48,6 +48,23 @@ class Idol extends Component {
       pictureStyle = { backgroundImage: `url(./images/idols/${name.replace('#', '').replace(/\s/g, '')}.jpg)` }
     }
 
+    let nameCode = <p className={styles.name}>{name}</p>;
+    if (isSelected && endYear) {
+      nameCode = <p className={styles.name}>{name}<span>{` (주 활동 : ${debutYear} - ${endYear})`}</span></p>;
+    }
+
+    let descCode;
+    if (desc) {
+      descCode = (
+        <div className={styles.desc}>
+          {desc.title && <p className={styles.title}>{desc.title}</p>}
+          {desc.namu && <a href={desc.namu} target="_blank" rel="noopener noreferrer" className={styles.link}>나무위키</a>}
+          {desc.naver && <a href={desc.naver} target="_blank" rel="noopener noreferrer" className={styles.link}>네이버</a>}
+          {desc.melon && <a href={desc.melon} target="_blank" rel="noopener noreferrer" className={styles.link}>멜론</a>}
+        </div>
+      );
+    }
+
     return (
       <div
         className={cx(`grid-item-${debutYear}`, styles.idol, styles[category], { [styles.major]: major, [styles.selected]: isSelected })}
@@ -57,11 +74,9 @@ class Idol extends Component {
         <div className={styles.twrapper}>
           <div className={styles.top}>
             <div className={styles.picture} style={pictureStyle} />
-            <div className={styles.desc}>
-              {desc && `"${desc}"`}
-            </div>
+            {descCode}
           </div>
-          <p className={styles.name}>{name}</p>
+          {nameCode}
           {youtubeCode}
         </div>
       </div>
