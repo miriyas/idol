@@ -36,10 +36,16 @@ class Idol extends Component {
     const { data, selected } = this.props;
     const { major, name, category, youtube, desc, debutYear } = data;
     const isSelected = selected === name;
+
     let youtubeCode;
     if (isSelected && youtube) {
       const youtubeUrl = `https://www.youtube.com/embed/${youtube.url}?controls=0&amp;start=${youtube.start};autoplay=1;modestbranding=1`
       youtubeCode = <iframe width="228" height="152" src={youtubeUrl} frameBorder="0" allow="accelerometer; autoplay;" allowFullScreen />
+    }
+
+    let pictureStyle;
+    if (youtube && youtube.url !== '') {
+      pictureStyle = { backgroundImage: `url(./images/idols/${name.replace('#', '').replace(/\s/g, '')}.jpg)` }
     }
 
     return (
@@ -50,7 +56,7 @@ class Idol extends Component {
       >
         <div className={styles.twrapper}>
           <div className={styles.top}>
-            <div className={styles.picture} style={youtube && { backgroundImage: `url(./images/idols/${name.replace('#', '').replace(/\s/g, '')}.jpg)` }} />
+            <div className={styles.picture} style={pictureStyle} />
             <div className={styles.desc}>
               {desc && `"${desc}"`}
             </div>
