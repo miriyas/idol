@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import cx from 'classnames';
 import memobind from 'memobind';
 import autobind from 'autobind-decorator';
+import axios from 'axios';
 
 import styles from './styles.module.scss';
 
@@ -36,6 +37,19 @@ class Top extends Component {
     this.state = {
       filter: null
     };
+
+    fetch('http://www.maniadb.com/api/search/metallica/?sr=artist&display=10&key=example&v=0.5?callback=foo', {
+    method: 'get',
+    mode: 'no-cors',
+}).then(e => {
+    console.log(e);
+    console.log('xWorks!');
+});
+
+
+    axios.get('http://www.maniadb.com/api/search/metallica/?sr=artist&display=10&key=example&v=0.5?callback=foo', { crossdomain: true }).then(res => {
+      console.log(res);
+    })
   }
 
   shouldComponentUpdate(nextProps, nextState) {
