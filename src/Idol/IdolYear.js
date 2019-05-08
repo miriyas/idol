@@ -63,7 +63,7 @@ class IdolYear extends Component {
 
     return (
       <Fragment >
-        <label>{year}년</label>
+        <h2>{year}년</h2>
         {YearConstants[year] && <p className={styles.yearDesc}>{YearConstants[year].desc}</p>}
         <ul key={`year-list-${year}`} className={cx(`grid-${year}`, styles.year)}>
           {data.map(idol => <Idol key={idol.name} data={idol} selected={selected} setSelected={this.props.setSelected} />)}

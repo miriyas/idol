@@ -2,6 +2,16 @@
   margin-bottom: 100px;
   font-size: 14px;
   line-height: 24px;
+
+  .yearsNav ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+      padding: 4px 8px;
+    }
+  }
 }
 
 .years {
@@ -9,7 +19,7 @@
   margin: 0 auto;
   padding: 14px;
 
-  label {
+  h2 {
     font-size: 24px;
     font-weight: bold;
   }

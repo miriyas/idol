@@ -8,6 +8,16 @@ class App extends Component {
     this.initPackery();
   }
 
+  componentDidMount() {
+    const content = document.querySelector('.App');
+    const insertTarget = document.querySelector('.yearsNav');
+    scrollnav.init(content, {
+      debug: false,
+      insertTarget: insertTarget,
+      insertLocation: 'append'
+    });
+  }
+
   render() {
     return (
       <div className="App">
