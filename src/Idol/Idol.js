@@ -21,7 +21,11 @@ class Idol extends Component {
         url: PropTypes.string,
         start: PropTypes.number
       }),
-      desc: PropTypes.string
+      desc: PropTypes.shape({
+        namu: PropTypes.string,
+        naver: PropTypes.string,
+        melon: PropTypes.string
+      }),
     })
   };
 
