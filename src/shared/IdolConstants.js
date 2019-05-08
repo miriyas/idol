@@ -3381,7 +3381,7 @@ const IdolConstants = [
   {
     debutYear: 2018,
     major: true,
-    name: "아이들",
+    name: "(여자)아이들",
     category: "girl-group",
     youtube: {
       url: '',
