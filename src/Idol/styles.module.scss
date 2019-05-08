@@ -3,6 +3,25 @@
   font-size: 14px;
   line-height: 24px;
 
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+      padding: 4px 8px;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      &.selected {
+        color: skyblue;
+      }
+    }
+  }
+
   .yearsNav ol {
     display: flex;
     flex-wrap: wrap;

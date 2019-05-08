@@ -71,7 +71,7 @@ class Idol extends Component {
 
     return (
       <div
-        className={cx(`grid-item-${debutYear}`, styles.idol, styles[category], { [styles.major]: major, [styles.selected]: isSelected })}
+        className={cx(`grid-item-${debutYear}`, styles.idol, 'category-all', `category-${category}`, styles[category], { [styles.major]: major, [styles.selected]: isSelected })}
         data-major={major === true ? 'major' : 'minor'}
       >
         <div className={styles.twrapper}>
