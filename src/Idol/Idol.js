@@ -72,12 +72,11 @@ class Idol extends Component {
     return (
       <div
         className={cx(`grid-item-${debutYear}`, styles.idol, styles[category], { [styles.major]: major, [styles.selected]: isSelected })}
-        onClick={memobind(this, 'handleOnClick', data)}
         data-major={major === true ? 'major' : 'minor'}
       >
         <div className={styles.twrapper}>
           <div className={styles.top}>
-            <div className={styles.picture} style={pictureStyle} />
+            <div className={styles.picture} style={pictureStyle} onClick={memobind(this, 'handleOnClick', data)} />
             {descCode}
           </div>
           {nameCode}
@@ -86,12 +85,6 @@ class Idol extends Component {
       </div>
     );
   }
-
-  // handleOnClick(youtube) {
-  //   if (youtube) {
-  //     window.open(`https://www.youtube.com/watch?v=${youtube.url}`, '_blank');
-  //   }
-  // }
 
   handleOnClick(data) {
     const { name, debutYear, youtube } = data;
