@@ -18,7 +18,8 @@ class IdolYears extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: null
+      selected: null,
+      selectedYear: null
     };
     window.iso = {};
   }
@@ -34,7 +35,7 @@ class IdolYears extends Component {
   }
 
   render() {
-    const { selected } = this.state;
+    const { selected, selectedYear } = this.state;
     const years = groupBy(IdolConstants, 'debutYear');
     return (
       <div className={styles.years}>
@@ -47,6 +48,7 @@ class IdolYears extends Component {
               data={years[year]}
               setSelected={this.setSelected}
               selected={selected}
+              selectedYear={selectedYear}
             />
           )
         })}
@@ -54,11 +56,12 @@ class IdolYears extends Component {
     );
   }
 
-  setSelected(name, year) {
+  setSelected(selected, selectedYear) {
     this.setState({
-      selected: name
+      selected,
+      selectedYear
     });
-    layout(year);
+    layout(selectedYear);
   }
 };
 

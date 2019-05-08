@@ -13,6 +13,7 @@ class IdolYear extends Component {
     year: PropTypes.string.isRequired,
     selected: PropTypes.string,
     setSelected: PropTypes.func.isRequired,
+    selectedYear: PropTypes.number,
     data: PropTypes.arrayOf(
       PropTypes.shape({
         debutYear: PropTypes.number.isRequired,
@@ -56,6 +57,17 @@ class IdolYear extends Component {
       this.props.data !== nextProps.data
       || this.props.selected !== nextProps.selected
     );
+  }
+
+  componentDidUpdate(prevProps) {
+    // 타 연도에서 클릭시 기존 연도 레이아웃 업데이트
+    if (
+      prevProps.selectedYear
+      && this.props.selectedYear !== prevProps.selectedYear
+      && this.props.selectedYear !== this.props.year
+    ) {
+      window.iso[prevProps.selectedYear].layout();
+    }
   }
 
   render() {
