@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { groupBy } from 'lodash';
 import autobind from 'autobind-decorator';
+import Top from './Top';
 import IdolYear from './IdolYear';
 import IdolConstants from '../shared/IdolConstants';
 
@@ -37,6 +38,7 @@ class IdolYears extends Component {
     const years = groupBy(IdolConstants, 'debutYear');
     return (
       <div className={styles.years}>
+        <Top />
         {Object.keys(years).map(year => {
           return (
             <IdolYear
