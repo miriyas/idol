@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F6F6F6;
+  font-family: "SF Pro Display", s"SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+@mixin lt($media) {
+  @if $media == M {
+    @media only screen and (min-width: 375px) { @content; }
+  } @else if $media == ML {
+    @media only screen and (min-width: 600px) { @content; }
+  } @else if $media == T {
+    @media only screen and (min-width: 768px) { @content; }
+  } @else if $media == SD {
+    @media only screen and (min-width: 1009px) { @content; } // 사파리는 스크롤바 15px을 합쳐 계산한다.
+  } @else if $media == D {
+    @media only screen and (min-width: 1280px) { @content; }
+  } @else if $media == HD {
+    @media only screen and (min-width: 1440px) { @content; }
+  } @else if $media == SHD {
+    @media only screen and (min-width: 1640px) { @content; }
+  } @else {
+    @media only screen and (min-width: $media) { @content; }
+  }
+}

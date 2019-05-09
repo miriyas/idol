@@ -7,7 +7,7 @@ import axios from 'axios';
 import convert from 'xml-js';
 import { throttle } from 'lodash';
 
-import styles from './styles.module.scss';
+import styles from './Idol.module.scss';
 
 @autobind
 class Idol extends Component {
@@ -41,6 +41,14 @@ class Idol extends Component {
     this.throttledSearchArtist = throttle(this.searchArtist, 1000);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.data.name !== nextProps.selected) {
+      this.setState({
+        result: null
+      });
+    }
+  }
+
   shouldComponentUpdate(nextProps, nextState) {
     let slided = false;
     if (
@@ -66,7 +74,7 @@ class Idol extends Component {
     let youtubeCode;
     if (isSelected && youtube && youtube.url !== '') {
       const youtubeUrl = `https://www.youtube.com/embed/${youtube.url}?controls=0&amp;start=${youtube.start};autoplay=1;modestbranding=1;playsinline=1`
-      youtubeCode = <iframe width="228" height="152" src={youtubeUrl} frameBorder="0" allow="accelerometer; autoplay;" allowFullScreen />
+      youtubeCode = <iframe width="292" height="184" src={youtubeUrl} frameBorder="0" allow="accelerometer; autoplay;" allowFullScreen />
     }
 
     let pictureStyle = { backgroundImage: `url(./images/idols/${name.replace('#', '').replace('*', '').replace(/\s/g, '').replace('(', '').replace(')', '')}.jpg)` }
@@ -83,17 +91,15 @@ class Idol extends Component {
       );
     }
 
-    let nameCode = <p className={styles.name}>{name}</p>;
-
     let fullDescCode;
     if (isSelected && result) {
-      nameCode = <p className={styles.name}>{name}<span>{` (활동기 : ${result.period})`}</span></p>;
       fullDescCode = (
         <div className={styles.fullDesc}>
-          <p className={styles.demo}>분류 : {result.demo && result.demo}</p>
+          {result.demo && <p className={styles.demo}>분류 : {result.demo}</p>}
           {result.desc && <p className={styles.desc}>{result.desc}</p>}
           {result.artist && <p className={styles.member}>구성원 : {result.artist}</p>}
           {result.songs && <p className={styles.songs}>주요곡 : {result.songs}</p>}
+          {descCode}
         </div>
       );
     }
@@ -118,9 +124,9 @@ class Idol extends Component {
         <div className={styles.twrapper}>
           <div className={styles.top}>
             <div className={styles.picture} style={pictureStyle} onClick={memobind(this, 'handleOnClick', data)} />
-            {descCode}
           </div>
-          {nameCode}
+          <p className={styles.name}>{name}</p>
+          <p className={styles.period}>{result && result.period && ` (활동기 : ${result.period})`}</p>
           {fullDescCode}
           {youtubeCode}
         </div>

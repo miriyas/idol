@@ -5,7 +5,7 @@ import Top from './Top';
 import IdolYear from './IdolYear';
 import IdolConstants from '../shared/IdolConstants';
 
-import styles from './styles.module.scss';
+import styles from './Idol.module.scss';
 
 function layout(year) {
   window.tm = setTimeout(() => {

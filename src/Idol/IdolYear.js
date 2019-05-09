@@ -5,7 +5,7 @@ import cx from 'classnames';
 import YearConstants from '../shared/YearConstants';
 import Idol from './Idol';
 
-import styles from './styles.module.scss';
+import styles from './Idol.module.scss';
 
 @autobind
 class IdolYear extends Component {
@@ -43,7 +43,7 @@ class IdolYear extends Component {
       transitionDuration: 300,
       packery: {
         gutter: 28,
-        columnWidth: 100,
+        columnWidth: 132,
         fitWidth: true
       },
       getSortData: {
@@ -76,8 +76,10 @@ class IdolYear extends Component {
 
     return (
       <Fragment >
-        <h2>{year}년</h2>
-        {YearConstants[year] && <p className={styles.yearDesc}>{YearConstants[year].desc}</p>}
+        <div className={cx(styles.yearTop, styles.centering)}>
+          <h2>{year}</h2>
+          {YearConstants[year] && <p>{YearConstants[year].desc}</p>}
+        </div>
         <ul key={`year-list-${year}`} className={cx(`grid-${year}`, styles.year)}>
           {data.map(idol => <Idol key={idol.name} data={idol} selected={selected} setSelected={this.props.setSelected} reLayout={this.props.reLayout} />)}
         </ul>
