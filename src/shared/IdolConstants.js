@@ -1764,6 +1764,7 @@ const IdolConstants = [
   {
     debutYear: 2007,
     name: "8eight",
+    searchName: "에이트",
     category: "mixed-group",
   },
 
@@ -2039,11 +2040,12 @@ const IdolConstants = [
   {
     debutYear: 2009,
     name: "HAM",
+    searchName: "Herat & Mind",
     category: "girl-group",
   },
   {
     debutYear: 2009,
-    name: "브렌뉴데이",
+    name: "브랜뉴데이",
     category: "girl-group",
   },
 
@@ -2070,6 +2072,7 @@ const IdolConstants = [
   {
     debutYear: 2009,
     name: "SHU-I",
+    searchName: "슈아이",
     category: "boy-group",
   },
 
@@ -2376,6 +2379,7 @@ const IdolConstants = [
   {
     debutYear: 2011,
     name: "제이클리",
+    search: "장문복",
     category: "boy-solo",
   },
 
@@ -2412,7 +2416,7 @@ const IdolConstants = [
   },
   {
     debutYear: 2012,
-    name: "FIESTAR",
+    name: "FIVESTAR",
     category: "girl-group",
   },
   {
@@ -2519,6 +2523,7 @@ const IdolConstants = [
   {
     debutYear: 2012,
     name: "빅스타",
+    searchIndex: 1,
     category: "boy-group",
   },
   {
@@ -2764,6 +2769,7 @@ const IdolConstants = [
   {
     debutYear: 2014,
     name: "배드키즈",
+    searchName: "null",
     category: "girl-group",
   },
   {
@@ -2774,6 +2780,7 @@ const IdolConstants = [
   {
     debutYear: 2014,
     name: "소나무",
+    searchName: "Sonamoo",
     category: "girl-group",
   },
   {
@@ -2890,7 +2897,7 @@ const IdolConstants = [
   },
   {
     debutYear: 2014,
-    name: "샤년",
+    name: "샤넌",
     category: "girl-solo",
   },
 
@@ -2939,6 +2946,7 @@ const IdolConstants = [
   {
     debutYear: 2015,
     name: "플레이백",
+    searchIndex: 1,
     category: "girl-group",
   },
   {
@@ -3010,6 +3018,7 @@ const IdolConstants = [
   {
     debutYear: 2015,
     name: "로미오",
+    searchIndex: 1,
     category: "boy-group",
   },
   {
@@ -3030,6 +3039,7 @@ const IdolConstants = [
   {
     debutYear: 2015,
     name: "빅브레인",
+    searchName: "null",
     category: "boy-group",
   },
 
@@ -3047,6 +3057,7 @@ const IdolConstants = [
     debutYear: 2015,
     major: true,
     name: "백예린",
+    searchIndex: 1,
     category: "girl-solo",
     youtube: {
       url: '',
@@ -3108,6 +3119,7 @@ const IdolConstants = [
   {
     debutYear: 2016,
     name: "마틸다",
+    searchName: "null",
     category: "girl-group",
   },
   {
@@ -3118,6 +3130,7 @@ const IdolConstants = [
   {
     debutYear: 2016,
     name: "구구단",
+    searchName: "gugudan",
     category: "girl-group",
   },
   {
@@ -3173,7 +3186,7 @@ const IdolConstants = [
   },
   {
     debutYear: 2016,
-    name: "VICTION",
+    name: "VICTON",
     category: "boy-group",
   },
   {
@@ -3254,6 +3267,7 @@ const IdolConstants = [
   {
     debutYear: 2017,
     name: "그레이시",
+    searchName: "null",
     category: "girl-group",
   },
   {
@@ -3300,6 +3314,8 @@ const IdolConstants = [
   {
     debutYear: 2017,
     name: "MVP",
+    searchName: "엠브이피",
+    searchIndex: 1,
     category: "boy-group",
   },
   {
@@ -3366,17 +3382,19 @@ const IdolConstants = [
   {
     debutYear: 2017,
     name: "김소희",
+    searchIndex: 4,
     category: "girl-solo",
   },
 
   {
     debutYear: 2017,
     name: "사무엘",
+    searchIndex: 3,
     category: "boy-solo",
   },
   {
     debutYear: 2017,
-    name: "정세윤",
+    name: "정세운",
     category: "boy-solo",
   },
 
@@ -3525,6 +3543,7 @@ const IdolConstants = [
   {
     debutYear: 2019,
     name: "우석X관린",
+    searchName: "null",
     category: "boy-group",
   },
 

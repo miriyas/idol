@@ -40,17 +40,6 @@ class Idol extends Component {
     this.throttledSearchArtist = throttle(this.searchArtist, 1000);
   }
 
-  // async componentWillMount() {
-  //   const { name, searchName, debutYear } = this.props.data;
-  //   if (debutYear > 2006) {
-  //     console.log(1);
-  //     const result = await this.throttledSearchArtist(searchName || name);
-  //     this.setState({
-  //       result
-  //     });
-  //   }
-  // }
-
   shouldComponentUpdate(nextProps, nextState) {
     return (
       this.props.data !== nextProps.data
@@ -73,7 +62,7 @@ class Idol extends Component {
 
     let pictureStyle;
     // if (result && result.image) {
-      pictureStyle = { backgroundImage: `url(./images/idols/${name.replace('#', '').replace(/\s/g, '')}.jpg)` }
+      pictureStyle = { backgroundImage: `url(./images/idols/${name.replace('#', '').replace('*', '').replace(/\s/g, '').replace('(', '').replace(')', '')}.jpg)` }
     // }
 
     let descCode;
@@ -121,7 +110,6 @@ class Idol extends Component {
       >
         <div className={styles.twrapper}>
           <div className={styles.top}>
-            {/* <img src={result && result.image} className={styles.picture}/> */}
             <div className={styles.picture} style={pictureStyle} onClick={memobind(this, 'handleOnClick', data)} />
             {descCode}
           </div>
@@ -133,14 +121,17 @@ class Idol extends Component {
     );
   }
 
-  async searchArtist(name) {
+  async searchArtist(data) {
+    const { name, searchName, searchIndex } = data;
     console.log(name);
     let result = {};
-    await axios.get(`http://localhost:9000/testAPI/${name}`)
+    await axios.get(`http://localhost:9000/testAPI/${searchName || name}`)
       .then(function (response) {
         const json = convert.xml2js(response.data, { compact: true });
         let { item } = json.rss.channel;
-        if (Array.isArray(item)) item = item[0];
+        if (Array.isArray(item)) {
+          item = item[searchIndex || 0];
+        };
 
         console.log(item);
         if (item) {
@@ -156,11 +147,14 @@ class Idol extends Component {
       .catch(function (error) {
         console.log(error);
       });
-    return result;
+
+    this.setState({
+      result
+    });
   }
 
   async handleOnClick(data) {
-    const { name, debutYear, searchName } = data;
+    const { name, debutYear } = data;
     if (this.props.selected === name) {
       console.log('cancel');
       this.setState({
@@ -169,12 +163,7 @@ class Idol extends Component {
       this.props.setSelected(null, debutYear);
     } else {
       console.log('GET full');
-      if (searchName !== 'null') {
-        const result = await this.throttledSearchArtist(searchName || name);
-        this.setState({
-          result
-        });
-      }
+      this.throttledSearchArtist(data);
       this.props.setSelected(name, debutYear);
     }
   }

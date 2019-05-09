@@ -14,7 +14,7 @@ router.get('/:name', async function(req, res, _next) {
   try {
     const result = await getMusicData(encodeURI(req.params.name));
     console.log('=================================================');
-    console.log(result.data);
+    console.log(result);
     res.send(result.data);
   } catch (error) {
     console.log("ERROR >>>>>>>>>>>>>>>>>>>>>>>>>", req.params.name);
