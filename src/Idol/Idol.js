@@ -40,16 +40,16 @@ class Idol extends Component {
     this.throttledSearchArtist = throttle(this.searchArtist, 1000);
   }
 
-  async componentWillMount() {
-    const { name, searchName, debutYear } = this.props.data;
-    if (debutYear > 2006) {
-      console.log(1);
-      const result = await this.throttledSearchArtist(searchName || name);
-      this.setState({
-        result
-      });
-    }
-  }
+  // async componentWillMount() {
+  //   const { name, searchName, debutYear } = this.props.data;
+  //   if (debutYear > 2006) {
+  //     console.log(1);
+  //     const result = await this.throttledSearchArtist(searchName || name);
+  //     this.setState({
+  //       result
+  //     });
+  //   }
+  // }
 
   shouldComponentUpdate(nextProps, nextState) {
     return (
@@ -121,8 +121,8 @@ class Idol extends Component {
       >
         <div className={styles.twrapper}>
           <div className={styles.top}>
-            <img src={result && result.image} className={styles.picture}/>
-            {/* <div className={styles.picture} style={pictureStyle} onClick={memobind(this, 'handleOnClick', data)} /> */}
+            {/* <img src={result && result.image} className={styles.picture}/> */}
+            <div className={styles.picture} style={pictureStyle} onClick={memobind(this, 'handleOnClick', data)} />
             {descCode}
           </div>
           {nameCode}
