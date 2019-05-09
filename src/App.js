@@ -16,6 +16,8 @@ class App extends Component {
       insertTarget: insertTarget,
       insertLocation: 'append'
     });
+    console.log('반값습니다. 이준혁입니다.');
+    console.log('010-7179-5429');
   }
 
   render() {

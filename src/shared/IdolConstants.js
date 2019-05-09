@@ -918,6 +918,7 @@ const IdolConstants = [
   {
     debutYear: 1999,
     name: "강현수",
+    searchName: "브이원",
     category: "boy-solo",
     desc: {
       namu: 'https://namu.wiki/w/V.One'
@@ -2957,6 +2958,7 @@ const IdolConstants = [
   {
     debutYear: 2015,
     name: "DIA",
+    searchIndex: 2,
     category: "girl-group",
   },
   {
@@ -3125,6 +3127,7 @@ const IdolConstants = [
   {
     debutYear: 2016,
     name: "믹스",
+    searchName: "null",
     category: "girl-group",
   },
   {
@@ -3368,6 +3371,7 @@ const IdolConstants = [
     debutYear: 2017,
     major: true,
     name: "전소연",
+    searchIndex: 5,
     category: "girl-solo",
     youtube: {
       url: '',
@@ -3494,6 +3498,7 @@ const IdolConstants = [
   {
     debutYear: 2018,
     name: "유빈",
+    searchIndex: 1,
     category: "girl-solo",
   },
 
@@ -3555,12 +3560,14 @@ const IdolConstants = [
   {
     debutYear: 2019,
     name: "유키카",
+    searchName: "null",
     category: "girl-solo",
   },
 
   {
     debutYear: 2019,
     name: "윤지성",
+    searchIndex: 1,
     category: "boy-solo",
   },
   {
@@ -3571,6 +3578,7 @@ const IdolConstants = [
   {
     debutYear: 2019,
     name: "박지훈",
+    searchIndex: 8,
     category: "boy-solo",
   },
 ];

@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 function layout(year) {
   window.tm = setTimeout(() => {
     window.iso[year].layout();
-  }, 500);
+  }, 100);
 }
 
 @autobind
@@ -49,6 +49,7 @@ class IdolYears extends Component {
               setSelected={this.setSelected}
               selected={selected}
               selectedYear={selectedYear}
+              reLayout={this.reLayout}
             />
           )
         })}
@@ -61,6 +62,10 @@ class IdolYears extends Component {
       selected,
       selectedYear
     });
+    layout(selectedYear);
+  }
+
+  reLayout(selectedYear) {
     layout(selectedYear);
   }
 };

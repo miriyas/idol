@@ -14,6 +14,7 @@ class Idol extends Component {
   static propTypes = {
     selected: PropTypes.string,
     setSelected: PropTypes.func.isRequired,
+    reLayout: PropTypes.func.isRequired,
     data: PropTypes.shape({
       debutYear: PropTypes.number.isRequired,
       major: PropTypes.bool,
@@ -59,7 +60,7 @@ class Idol extends Component {
   render() {
     const { data, selected } = this.props;
     const { result } = this.state;
-    const { major, name, category, youtube, desc, debutYear } = data;
+    const { major, name, category, youtube, desc, debutYear, searchName } = data;
     const isSelected = selected === name;
 
     let youtubeCode;
@@ -103,7 +104,8 @@ class Idol extends Component {
       'category-all', `category-${category}`, styles[category],
       {
         [styles.major]: major,
-        [styles.selected]: isSelected,
+        [styles.noClick]: searchName === 'null',
+        [styles.selected]: isSelected && ((youtube && youtube.url !== '') || result),
         [styles.fullDesc]: fullDescCode && youtubeCode
       }
     );
@@ -127,10 +129,11 @@ class Idol extends Component {
   }
 
   async searchArtist(data) {
-    const { name, searchName, searchIndex } = data;
+    const { name, searchName, searchIndex, debutYear } = data;
     console.log(name);
-    let result = {};
-    await axios.get(`${window.location.protocol}//localhost:9000/testAPI/${searchName || name}`)
+    if (searchName !== 'null') {
+      let result = {};
+      await axios.get(`${window.location.protocol}//localhost:9000/testAPI/${searchName || name}`)
       .then(function (response) {
         const json = convert.xml2js(response.data, { compact: true });
         let { item } = json.rss.channel;
@@ -152,9 +155,16 @@ class Idol extends Component {
         console.log(error);
       });
 
-    this.setState({
-      result
-    });
+      this.setState({
+        result
+      });
+      this.props.reLayout(debutYear);
+    } else {
+      this.setState({
+        result: null
+      });
+      this.props.reLayout(debutYear);
+    }
   }
 
   async handleOnClick(data) {

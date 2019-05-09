@@ -94,6 +94,10 @@
     }
   }
 
+  &.noClick {
+    cursor: not-allowed;
+  }
+
   .top {
     height: 100px;
     position: relative;

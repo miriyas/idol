@@ -14,6 +14,7 @@ class IdolYear extends Component {
     selected: PropTypes.string,
     setSelected: PropTypes.func.isRequired,
     selectedYear: PropTypes.number,
+    reLayout: PropTypes.func.isRequired,
     data: PropTypes.arrayOf(
       PropTypes.shape({
         debutYear: PropTypes.number.isRequired,
@@ -78,7 +79,7 @@ class IdolYear extends Component {
         <h2>{year}년</h2>
         {YearConstants[year] && <p className={styles.yearDesc}>{YearConstants[year].desc}</p>}
         <ul key={`year-list-${year}`} className={cx(`grid-${year}`, styles.year)}>
-          {data.map(idol => <Idol key={idol.name} data={idol} selected={selected} setSelected={this.props.setSelected} />)}
+          {data.map(idol => <Idol key={idol.name} data={idol} selected={selected} setSelected={this.props.setSelected} reLayout={this.props.reLayout} />)}
         </ul>
       </Fragment>
     );
