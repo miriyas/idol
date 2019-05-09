@@ -133,7 +133,7 @@ class Idol extends Component {
     console.log(name);
     if (searchName !== 'null') {
       let result = {};
-      await axios.get(`${window.location.protocol}//${window.location.hostname}:9000/testAPI/${searchName || name}`)
+      await axios.get(`http://localhost:9000/testAPI/${searchName || name}`)
       .then(function (response) {
         const json = convert.xml2js(response.data, { compact: true });
         let { item } = json.rss.channel;
