@@ -27,3 +27,18 @@ body {
     @media only screen and (min-width: $media) { @content; }
   }
 }
+
+.centering {
+  margin: 0 auto;
+  max-width: 292px;
+
+  @include lt(496px) {
+    max-width: 452px;
+  }
+  @include lt(654px) {
+    max-width: 612px;
+  }
+  @include lt(814px) {
+    max-width: 772px;
+  }
+}
