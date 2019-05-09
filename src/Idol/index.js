@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 function layout(year) {
   window.tm = setTimeout(() => {
     window.iso[year].layout();
-  }, 10);
+  }, 500);
 }
 
 @autobind

@@ -41,10 +41,18 @@ class Idol extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    let slided = false;
+    if (
+      (this.props.selected === this.props.data.name && nextProps.selected !== this.props.selected) // 선택이 풀렸을 때
+      || (this.props.selected !== this.props.data.name && nextProps.selected === this.props.data.name) // 선택이 되었을 때
+    ) {
+      slided = true;
+    }
+
     return (
       this.props.data !== nextProps.data
-      || this.props.selected !== nextProps.selected
       || this.state.result !== nextState.result
+      || slided
     );
   }
 
@@ -55,15 +63,12 @@ class Idol extends Component {
     const isSelected = selected === name;
 
     let youtubeCode;
-    if (isSelected && youtube) {
+    if (isSelected && youtube && youtube.url !== '') {
       const youtubeUrl = `https://www.youtube.com/embed/${youtube.url}?controls=0&amp;start=${youtube.start};autoplay=1;modestbranding=1;playsinline=1`
       youtubeCode = <iframe width="228" height="152" src={youtubeUrl} frameBorder="0" allow="accelerometer; autoplay;" allowFullScreen />
     }
 
-    let pictureStyle;
-    // if (result && result.image) {
-      pictureStyle = { backgroundImage: `url(./images/idols/${name.replace('#', '').replace('*', '').replace(/\s/g, '').replace('(', '').replace(')', '')}.jpg)` }
-    // }
+    let pictureStyle = { backgroundImage: `url(./images/idols/${name.replace('#', '').replace('*', '').replace(/\s/g, '').replace('(', '').replace(')', '')}.jpg)` }
 
     let descCode;
     if (desc) {
@@ -99,7 +104,7 @@ class Idol extends Component {
       {
         [styles.major]: major,
         [styles.selected]: isSelected,
-        [styles.fullDesc]: fullDescCode
+        [styles.fullDesc]: fullDescCode && youtubeCode
       }
     );
 
@@ -133,13 +138,12 @@ class Idol extends Component {
           item = item[searchIndex || 0];
         };
 
-        console.log(item);
         if (item) {
           if (item.title) result.title = item.title._cdata;
           if (item.description) result.desc = item.description._cdata;
           if (item.demographic) result.demo = item.demographic._cdata;
           if (item.image) result.image = item.image._cdata;
-          if (item['maniadb:majorsonglist']) result.songs = item['maniadb:majorsonglist']._cdata;
+          if (item['maniadb:majorsonglist']) result.songs = item['maniadb:majorsonglist']._cdata.replace(/&nbsp;/g, ' ');
           if (item.period) result.period = item.period._cdata;
           if (item['maniadb:relatedartistlist']) result.artist = item['maniadb:relatedartistlist']._cdata;
         }
