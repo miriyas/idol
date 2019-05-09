@@ -82,6 +82,16 @@
       width: 228px;
       height: 276px;
     }
+
+    &.fullDesc {
+      width: 228px;
+      height: 428px;
+
+      .twrapper {
+        width: 228px;
+        height: 428px;
+      }
+    }
   }
 
   .top {
@@ -127,6 +137,17 @@
 
     span {
       color: #999999;
+    }
+  }
+
+  .fullDesc {
+    padding: 4px;
+    height: 152px;
+    text-align: left;
+    background-color: #F7F7F7;
+
+    p {
+      padding-bottom: 8px;
     }
   }
 

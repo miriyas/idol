@@ -162,6 +162,7 @@ const IdolConstants = [
     debutYear: 1996,
     endYear: 1997,
     name: "하모하모",
+    searchName: "Hamohamo",
     category: "boy-group",
     desc: {
       naver: 'https://music.naver.com/artist/intro.nhn?artistId=9490',
@@ -292,6 +293,7 @@ const IdolConstants = [
   {
     debutYear: 1997,
     name: "고구려",
+    searchName: "Corea",
     category: "mixed-group",
   },
 
@@ -1062,7 +1064,7 @@ const IdolConstants = [
   },
   {
     debutYear: 2001,
-    name: "걸프랜드",
+    name: "걸 프렌드",
     category: "girl-group",
   },
   {
@@ -1125,6 +1127,7 @@ const IdolConstants = [
   {
     debutYear: 2001,
     name: "하늘",
+    searchName: "로티플스카이",
     category: "girl-solo",
   },
   {
@@ -1135,6 +1138,7 @@ const IdolConstants = [
   {
     debutYear: 2001,
     name: "다나",
+    searchName: "다나 더 그레이스",
     category: "girl-solo",
   },
   {
@@ -1223,11 +1227,6 @@ const IdolConstants = [
   {
     debutYear: 2002,
     name: "신비",
-    category: "girl-group",
-  },
-  {
-    debutYear: 2002,
-    name: "스위트",
     category: "girl-group",
   },
   {
@@ -1451,6 +1450,7 @@ const IdolConstants = [
   {
     debutYear: 2003,
     name: "솜이",
+    searchName: "메이린",
     category: "girl-solo",
   },
 
@@ -1601,11 +1601,12 @@ const IdolConstants = [
   {
     debutYear: 2005,
     name: "더 빨강",
+    searchName: "배슬기",
     category: "girl-group",
   },
   {
     debutYear: 2005,
-    name: "가비엔제이",
+    name: "가비앤제이",
     category: "girl-group",
   },
   {
@@ -1616,6 +1617,7 @@ const IdolConstants = [
   {
     debutYear: 2005,
     name: "i-13",
+    searchName: "아이써틴",
     category: "girl-group",
   },
   {
@@ -1688,6 +1690,7 @@ const IdolConstants = [
   {
     debutYear: 2005,
     name: "제시카 H.O",
+    searchName: "제시카 에이치오",
     category: "girl-solo",
   },
 

@@ -27,7 +27,7 @@ module.exports = {
     "no-param-reassign": ["error", { "props": false }],
     "no-trailing-spaces": "warn",
     "no-underscore-dangle": "off",
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
     "no-useless-escape": "off",
     "no-mixed-operators": "off",
     "no-multi-spaces": ["error", { ignoreEOLComments: true }],
@@ -35,18 +35,7 @@ module.exports = {
     "object-property-newline": "off",
     "prefer-promise-reject-errors": "warn",
     "prefer-template": "warn",
-    "prefer-destructuring": ["error", {
-      "VariableDeclarator": {
-        "array": false,
-        "object": true
-      },
-      "AssignmentExpression": {
-        "array": true,
-        "object": false,
-      }
-    }, {
-      "enforceForRenamedProperties": false
-    }],
+    "prefer-destructuring": ["error", {"object": true, "array": false}],
     "quote-props": ["error", "as-needed", { "unnecessary": false }],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
