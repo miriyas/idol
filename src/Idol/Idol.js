@@ -137,7 +137,9 @@ class Idol extends Component {
   async searchArtist(data) {
     const { name, searchName, searchIndex, debutYear } = data;
     console.log(name);
-    if (searchName !== 'null' && window.location.protocol !== 'https:') {
+
+    const isChrome = window.navigator.userAgent.toLowerCase().indexOf('chrome') !== -1;
+    if (searchName !== 'null' && isChrome) {
       let result = {};
       await axios.get(`http://localhost:9000/testAPI/${searchName || name}`)
       .then(function (response) {
