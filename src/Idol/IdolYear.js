@@ -77,7 +77,7 @@ class IdolYear extends Component {
     return (
       <Fragment >
         <div className={cx(styles.yearTop, styles.centering)}>
-          <h2>{year}</h2>
+          <h2 title={`${year}년에 데뷔한 아이돌 수는 ${data.length}개`}>{year}</h2>
           {YearConstants[year] && <p>{YearConstants[year].desc}</p>}
         </div>
         <ul key={`year-list-${year}`} className={cx(`grid-${year}`, styles.year)}>

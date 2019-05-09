@@ -5,12 +5,31 @@
   font-size: 14px;
   line-height: 24px;
 
+  .desc {
+    margin-bottom: 20px;
+    padding: 14px 20px 6px;
+    font-size: 12px;
+    color: #666666;
+    line-height: 18px;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
   .filter {
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 6px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
     list-style: none;
 
     li {
+      display: inline-block;
       padding: 4px 8px;
       cursor: pointer;
 
@@ -19,18 +38,36 @@
       }
 
       &.selected {
-        color: skyblue;
+        font-weight: bold;
       }
     }
   }
 
-  .yearsNav ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+  .yearsNav {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    ol {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 14px;
+      list-style: none;
+    }
 
     li {
       padding: 4px 8px;
+      width: 60px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #444444;
+
+        &:hover {
+          color: #111111;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
