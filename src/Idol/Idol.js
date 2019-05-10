@@ -122,8 +122,10 @@ class Idol extends Component {
         data-major={major === true ? 'major' : 'minor'}
       >
         <div className={styles.twrapper}>
-          <div className={styles.top}>
-            <div className={styles.picture} style={pictureStyle} onClick={memobind(this, 'handleOnClick', data)} />
+          <div className={styles.top} onClick={memobind(this, 'handleOnClick', data)}>
+            <div className={styles.shade} />
+            <div className={styles.picture} style={pictureStyle} />
+            {youtube && youtube.url !== '' && <img src="./images/sound.svg" className={styles.sound} />}
           </div>
           <p className={styles.name}>{name}</p>
           <p className={styles.period}>{result && result.period && ` (활동기 : ${result.period})`}</p>
